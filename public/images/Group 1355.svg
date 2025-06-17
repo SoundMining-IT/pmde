@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90.491" height="90.49" viewBox="0 0 90.491 90.49">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="path267" d="M0-682.665H53.8v53.8H0Z" transform="translate(0 682.665)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1355" data-name="Group 1355" transform="translate(6018 -18062.67)">
+    <circle id="Ellipse_419" data-name="Ellipse 419" cx="45.245" cy="45.245" r="45.245" transform="translate(-5927.509 18062.67) rotate(90)" fill="#45596d"/>
+    <g id="g261" transform="translate(-5999.652 18763.41)">
+      <g id="g263" transform="translate(0 -682.665)">
+        <g id="g265" clip-path="url(#clip-path)">
+          <g id="g271" transform="translate(9.456 7.355)">
+            <path id="path273" d="M-49.13-98.261a4.207,4.207,0,0,1-4.2-4.2,4.207,4.207,0,0,1,4.2-4.2,4.207,4.207,0,0,1,4.2,4.2A4.207,4.207,0,0,1-49.13-98.261Z" transform="translate(53.333 106.666)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.4"/>
+          </g>
+          <g id="g275" transform="translate(1.051 1.051)">
+            <path id="path277" d="M-73.7-275.056A12.6,12.6,0,0,1-80-285.977a12.609,12.609,0,0,1,12.609-12.609,12.609,12.609,0,0,1,12.609,12.609,12.6,12.6,0,0,1-6.3,10.921,12.54,12.54,0,0,1-6.3,1.687A12.54,12.54,0,0,1-73.7-275.056Z" transform="translate(80 298.586)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.4"/>
+          </g>
+          <g id="g279" transform="translate(7.355 17.862)">
+            <path id="path281" d="M-147.391-78.547v-.415a6.3,6.3,0,0,0-6.3-6.3,6.3,6.3,0,0,0-6.3,6.3v.415" transform="translate(160 85.266)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.4"/>
+          </g>
+          <g id="g283" transform="translate(35.934 33.833)">
+            <path id="path285" d="M-49.13-98.261a4.207,4.207,0,0,1-4.2-4.2,4.207,4.207,0,0,1,4.2-4.2,4.207,4.207,0,0,1,4.2,4.2A4.207,4.207,0,0,1-49.13-98.261Z" transform="translate(53.333 106.666)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.4"/>
+          </g>
+          <g id="g287" transform="translate(27.529 27.529)">
+            <path id="path289" d="M-73.7-275.056A12.6,12.6,0,0,1-80-285.977a12.609,12.609,0,0,1,12.609-12.609,12.609,12.609,0,0,1,12.609,12.609,12.6,12.6,0,0,1-6.3,10.921,12.54,12.54,0,0,1-6.3,1.687A12.54,12.54,0,0,1-73.7-275.056Z" transform="translate(80 298.586)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.4"/>
+          </g>
+          <g id="g291" transform="translate(33.833 44.34)">
+            <path id="path293" d="M-147.391-78.547v-.415a6.3,6.3,0,0,0-6.3-6.3,6.3,6.3,0,0,0-6.3,6.3v.415" transform="translate(160 85.266)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.4"/>
+          </g>
+          <g id="g295" transform="translate(5.884 31.101)">
+            <path id="path297" d="M-122.826-98.261h2.1l-6.3-8.406-6.3,8.406h2.1v2.1a8.406,8.406,0,0,0,8.406,8.406h8.406a8.406,8.406,0,0,1-8.406-8.406Z" transform="translate(133.333 106.666)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.4"/>
+          </g>
+          <g id="g299" transform="translate(29 3.783)">
+            <path id="path301" d="M-130.961-5.574a8.39,8.39,0,0,0-2.8-.477h-8.406a8.406,8.406,0,0,1,8.406,8.406v2.1h-2.1l6.3,8.406,6.3-8.406h-2.1v-2.1q0-.383-.034-.757" transform="translate(142.164 6.051)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.4"/>
+          </g>
+          <g id="g303" transform="translate(42.974 5.989)">
+            <path id="path305" d="M-24.565-12.283a1.051,1.051,0,0,1-1.051,1.051,1.051,1.051,0,0,1-1.051-1.051,1.051,1.051,0,0,1,1.051-1.051,1.051,1.051,0,0,1,1.051,1.051" transform="translate(26.667 13.333)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

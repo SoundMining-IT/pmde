@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_109" data-name="Rectangle 109" width="33.15" height="33.073" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="LinkedIn" transform="translate(23318.963 -2773.697)">
+    <g id="Group_913" data-name="Group 913" transform="translate(-2363.963 -1619)">
+      <circle id="Ellipse_12" data-name="Ellipse 12" cx="32" cy="32" r="32" transform="translate(-20955 4392.697)" fill="#2662cb"/>
+      <g id="Group_116" data-name="Group 116" transform="translate(-20939.574 4404.963)">
+        <g id="Group_115" data-name="Group 115" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <path id="Path_200" data-name="Path 200" d="M.547,10.978H7.425V33.073H.547ZM3.987,0A3.982,3.982,0,1,1,0,3.978,3.982,3.982,0,0,1,3.987,0" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_201" data-name="Path 201" d="M6.99,6.761h6.587V9.783h.091a7.218,7.218,0,0,1,6.5-3.569c6.953,0,8.236,4.573,8.236,10.524V28.856H21.542V18.114c0-2.565-.049-5.86-3.569-5.86-3.574,0-4.119,2.792-4.119,5.672v10.93H6.99Z" transform="translate(4.744 4.217)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column;
+    margin-top: -100px;
+
+    input {
+      height: 40px;
+    }
+
+    .form-left {
+      align-items: center;
+      padding-right: 0px;
+
+      .form-title {
+        text-align: center;
+        font-size: var(--text-xlarge) !important;
+      }
+
+      .form-subtext {
+        max-width: 80%;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+
+    .form-right {
+      width: 100% !important;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72.491" height="72.491" viewBox="0 0 72.491 72.491">
+  <g id="Icon_9_-_not_selected" data-name="Icon 9 - not selected" transform="translate(9981.738 2114.032)">
+    <circle id="Ellipse_133" data-name="Ellipse 133" cx="36.245" cy="36.245" r="36.245" transform="translate(-9909.247 -2114.032) rotate(90)" fill="#d0cabe"/>
+    <g id="Group_295" data-name="Group 295" transform="translate(-9977.844 -2114.335)">
+      <path id="Path_800" data-name="Path 800" d="M30.8,106.379a4.377,4.377,0,0,0-8.744-.291,5.468,5.468,0,0,0-6.744,7.23A7.664,7.664,0,0,0,10,120.612h8.54v1.861a1.861,1.861,0,0,0,1.861,1.861h0a1.861,1.861,0,0,0,1.861-1.861v-1.861H30.8V114.1H28.94a1.861,1.861,0,0,1-1.861-1.861h0a1.861,1.861,0,0,1,1.861-1.861H30.8v-4Z" transform="translate(0 -83.437)" fill="none" stroke="#aba28b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+      <path id="Path_801" data-name="Path 801" d="M249.4,275.031v0a5.451,5.451,0,0,0-.387-2.013,7.665,7.665,0,0,0,5.314-7.293h-8.54v-1.861a1.861,1.861,0,1,0-3.722,0v1.861h-8.54v6.514h1.861a1.861,1.861,0,0,1,0,3.722h-1.861v4a4.377,4.377,0,0,0,8.744.291,5.467,5.467,0,0,0,1.657.257h0" transform="translate(-202.728 -228.548)" fill="none" stroke="#aba28b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+      <path id="Path_802" data-name="Path 802" d="M291.218,30.449l.637-1.749a1.861,1.861,0,0,0-1.112-2.385h0a1.861,1.861,0,0,0-2.385,1.112l-.637,1.749L279.7,26.255l2.228-6.121-1.749-.637a1.861,1.861,0,0,1-1.112-2.385h0A1.861,1.861,0,0,1,281.447,16l1.749.637,1.32-3.625a4.471,4.471,0,0,1,5.286-2.865,4.376,4.376,0,0,1,3.077,5.453,5.469,5.469,0,0,1,3.864,9.1,7.665,7.665,0,0,1,2.5,8.671Z" transform="translate(-243.921)" fill="none" stroke="#aba28b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+      <path id="Path_803" data-name="Path 803" d="M30.8,316.233a4.377,4.377,0,0,1-8.744.291,5.468,5.468,0,0,1-6.744-7.23A7.664,7.664,0,0,1,10,302" transform="translate(0 -264.825)" fill="none" stroke="#aba28b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+      <g id="Group_294" data-name="Group 294" transform="translate(45.073 50.351)">
+        <rect id="Rectangle_285" data-name="Rectangle 285" fill="none" stroke="#aba28b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+      </g>
+    </g>
+  </g>
+</svg>

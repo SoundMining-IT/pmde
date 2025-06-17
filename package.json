@@ -1,0 +1,37 @@
+{
+  "name": "sound-mining",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "framer-motion": "^12.6.3",
+    "lottie-react": "^2.4.1",
+    "lucide-react": "^0.479.0",
+    "next": "15.1.7",
+    "next-sitemap": "^4.2.3",
+    "nodemailer": "^6.10.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-transition-group": "^4.4.5",
+    "sass": "^1.85.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-google-recaptcha": "^2.1.9",
+    "@types/react-lottie": "^1.2.10",
+    "@types/react-transition-group": "^4.4.12",
+    "typescript": "^5"
+  }
+}

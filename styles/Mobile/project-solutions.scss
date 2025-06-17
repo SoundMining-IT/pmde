@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+  #project-hero {
+    .content {
+      margin-top: 80%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+
+      h1,
+      h2 {
+        text-align: center !important;
+      }
+
+      .subtitle {
+        position: relative;
+        max-width: 60% !important;
+        right: 0px;
+      }
+
+      .description {
+        white-space: wrap;
+        font-size: var(--text-large) !important;
+        text-align: center;
+        top: -100px;
+        left: 120px;
+      }
+    }
+  }
+
+  .tabs-container .project-management-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+    #project-icons {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+  #insights-hero-container {
+    .title {
+      text-align: center;
+    }
+
+    .hero-mobile-content {
+      bottom: -150px !important;
+      position: relative;
+    }
+
+    .subtitle {
+      margin-top: 20px;
+    }
+  }
+
+  .case-studies {
+    // margin-top: -20vh;
+    min-height: 100% !important;
+    margin-top: 0px !important;
+  }
+
+  .case-studies .case-studies-content-wrapper {
+    h1 {
+      text-align: center;
+      font-size: var(--text-xlarge);
+      justify-content: center;
+    }
+    .case-studies-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

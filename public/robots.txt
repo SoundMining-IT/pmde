@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.pmde.mu
+
+# Sitemaps
+Sitemap: https://www.pmde.mu/sitemap.xml

@@ -1,0 +1,98 @@
+$primary-color: #900;
+$text-color: #000;
+$inactive-color: rgba(0, 0, 0, 0.2);
+$background-color: #f7f5f1;
+
+.tabs-flipcards-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  //   background-color: $background-color;
+  padding: 50px 0;
+
+  .tab-item.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Adjust if .tabs-header has a border-bottom or .tab-item has padding-bottom */
+    left: 0;
+    width: 100%;
+    height: 3px; /* Thickness of the underline */
+    background-color: var(--color5); /* Color of the underline */
+  }
+
+  .tabs-header {
+    display: flex;
+    justify-content: left;
+    gap: 25px;
+    margin-bottom: 30px;
+
+    .tab-item {
+      position: relative;
+      cursor: pointer;
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      background: transparent;
+      color: $inactive-color;
+      max-width: 200px;
+      text-align: center !important;
+      display: flex;
+      align-items: center;
+
+      &.active {
+        // background: $primary-color;
+        color: black;
+      }
+    }
+  }
+
+  .tabs-content {
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+
+    h2 {
+      font-size: var(--text-xxlarge);
+      font-weight: bold;
+      color: var(--color3);
+      text-transform: uppercase;
+      padding-bottom: 1rem;
+      font-family: var(--primary-font) !important;
+    }
+
+    p {
+      font-size: var(--text-medium);
+      color: black;
+      font-weight: bold;
+      margin-bottom: 30px;
+      max-width: 80% !important;
+    }
+
+    .tab-subtitle {
+      font-size: 20px;
+      color: #a59d91; // Soft gold/grey tone
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-top: -5px;
+      margin-bottom: 15px;
+      display: block;
+
+      @media screen and (max-width: 768px) {
+        max-width: 80% !important;
+      }
+    }
+  }
+
+  .flipcard-container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_108" data-name="Rectangle 108" width="38.113" height="26.678" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Youtube" transform="translate(23226.963 -2772.697)">
+    <g id="Group_914" data-name="Group 914" transform="translate(-2375.963 -1619)">
+      <circle id="Ellipse_13" data-name="Ellipse 13" cx="32" cy="32" r="32" transform="translate(-20851 4391.697)" fill="#e21111"/>
+      <g id="Group_114" data-name="Group 114" transform="translate(-20838.057 4410.357)">
+        <g id="Group_113" data-name="Group 113" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <path id="Path_199" data-name="Path 199" d="M38.113,8.364A8.363,8.363,0,0,0,29.749,0H8.364A8.363,8.363,0,0,0,0,8.364v9.951a8.363,8.363,0,0,0,8.364,8.364H29.749a8.363,8.363,0,0,0,8.364-8.364ZM25.536,14.085l-9.59,4.745c-.375.2-1.653-.069-1.653-.5V8.594c0-.433,1.287-.7,1.665-.491l9.179,5c.385.219.79.775.4.986" transform="translate(0 -0.001)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

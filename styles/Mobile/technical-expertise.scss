@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+  #technical-hero {
+    .content {
+      margin-top: 80%;
+    }
+    .title {
+      text-align: center;
+      font-size: var(--text-xlarge);
+      max-width: 80%;
+    }
+
+    .subtitle {
+      margin-top: 20px;
+    }
+
+    .description {
+      text-align: center !important;
+      top: -30%;
+      max-width: 80%;
+      left: 10%;
+    }
+  }
+
+  .advisory-tabs {
+    .tab-item {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .tabs-content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        max-width: 80% !important;
+      }
+    }
+  }
+
+  .tabs-flipcards-container .flipcard-container {
+    justify-content: center;
+  }
+
+  .tabs-flipcards-container .tabs-content h2 {
+    font-size: var(--text-large);
+  }
+}

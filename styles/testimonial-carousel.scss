@@ -1,0 +1,193 @@
+.testimonial-carousel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  padding-top: 400px;
+  // overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999 !important;
+  //   background: url("/background.jpg") no-repeat center/cover;
+
+  .carousel-content-area {
+    overflow: visible;
+  }
+
+  .arrow {
+    background: none !important;
+  }
+
+  .wire {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    z-index: 1;
+  }
+
+  .carousel-wrapper {
+    display: flex;
+    overflow: visible;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .carousel-container {
+    display: flex;
+    gap: 140px;
+    width: max-content;
+    white-space: nowrap;
+  }
+
+  .testimonial {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Alternate positioning */
+  .above {
+    transform: translateY(-135px);
+  }
+
+  .below {
+    transform: translateY(90px);
+  }
+
+  .testimonial-content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial p {
+    font-size: 17px;
+    color: #333;
+  }
+
+  .text {
+    max-width: 300px !important;
+    white-space: normal;
+  }
+
+  .name {
+    font-weight: bold;
+    color: var(--color5);
+  }
+
+  .job {
+    font-weight: bold;
+    color: var(--color3);
+    font-family: var(--tertiary-font);
+  }
+
+  .company {
+    color: black;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+  }
+
+  .corp {
+    color: black;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+  }
+
+  .clip {
+    position: absolute;
+    top: -10px;
+    width: 15px;
+    height: 30px;
+    scale: 2;
+    left: 50%;
+    background: #45596d;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  .clip:first-child {
+    left: 40%;
+  }
+
+  .clip:last-child {
+    right: 30%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .testimonial {
+      width: 180px;
+      height: 220px;
+      padding: 15px;
+    }
+
+    .clip {
+      width: 12px;
+      height: 25px;
+    }
+
+    .above,
+    .below {
+      transform: none; /* Align in a single row for mobile */
+    }
+  }
+}
+
+.stat-item {
+  span {
+    max-width: 100% !important;
+    padding-top: 20px;
+  }
+}
+
+.testimonials {
+  position: relative;
+}
+
+.boulder-bottom {
+  position: absolute;
+  bottom: -51.3%;
+  background-image: url("../public/images/CornerRock.webp");
+  background-repeat: no-repeat;
+  width: 100% !important;
+  height: 100%;
+  z-index: 999;
+  pointer-events: none;
+
+  @media screen and (min-width: 1400px) and (max-width: 1700px) {
+    bottom: -55.5% !important;
+  }
+}
+
+.boulder-top {
+  position: absolute;
+  bottom: 0px;
+  background-image: url("../public/images/Full rock.webp");
+  background-repeat: no-repeat;
+  width: 100% !important;
+  height: 100%;
+  z-index: 99;
+}
+
+.boulder-right {
+  position: absolute;
+  bottom: 0px;
+  background-image: url("../public/images/Piece of rock.webp");
+  background-repeat: no-repeat;
+  width: 100% !important;
+  height: 100%;
+  z-index: 999;
+  pointer-events: none;
+}

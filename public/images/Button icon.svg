@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.834" height="21.281" viewBox="0 0 45.834 21.281">
+  <g id="Button_icon" data-name="Button icon" transform="translate(21459 3576.222)">
+    <g id="Group_910" data-name="Group 910" transform="translate(-22219 -5348)">
+      <g id="Group_907" data-name="Group 907" transform="translate(116.102 -1104.12)">
+        <g id="Group_30" data-name="Group 30" transform="translate(687.63 2895.072) rotate(180)">
+          <path id="Path_31" data-name="Path 31" d="M34.42,8.385H0L6.659,0" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="Path_32" data-name="Path 32" d="M0,0,6.655,8.686" transform="translate(0 8.385)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+        </g>
+      </g>
+      <g id="Rectangle_435" data-name="Rectangle 435" transform="translate(760 1774.416)" fill="none" stroke="#fff" stroke-width="1.5">
+        <rect width="32" height="16" rx="8" stroke="none"/>
+        <rect x="0.75" y="0.75" width="30.5" height="14.5" rx="7.25" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

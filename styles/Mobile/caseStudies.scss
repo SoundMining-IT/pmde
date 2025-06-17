@@ -1,0 +1,220 @@
+@media screen and (max-width: 768px) {
+  .study-hero {
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .abs {
+        display: none;
+      }
+
+      h2 {
+        text-align: center;
+        max-width: 80%;
+      }
+
+      .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+
+        span,
+        p {
+          text-align: center;
+          max-width: 80%;
+        }
+
+        p {
+          padding-bottom: 10vh;
+        }
+      }
+    }
+  }
+
+  .about-client {
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2,
+      p {
+        text-align: center;
+      }
+
+      p {
+        max-width: 50%;
+        padding-bottom: 10vh;
+      }
+    }
+
+    #client-info {
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .challenging-environment {
+    min-height: 50vh;
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: var(--text-xlarge);
+        line-height: 40px;
+        max-width: 80%;
+      }
+    }
+  }
+
+  .operational-continuity {
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        text-align: center;
+        max-width: 80%;
+        font-size: var(--text-medium);
+        white-space: wrap;
+        margin-top: 20vh;
+      }
+
+      .concerns {
+        gap: 0px;
+        flex-direction: column;
+
+        .col-item {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+
+          span,
+          p {
+            text-align: center;
+          }
+
+          p {
+            max-width: 70%;
+          }
+        }
+
+        .col-item img {
+          width: 120px;
+        }
+      }
+
+      .bottom-text {
+        padding-top: 0px;
+        margin-top: 50px;
+        margin-bottom: 20vh;
+      }
+    }
+  }
+
+  .geology {
+    clip-path: none;
+    .content {
+      padding-bottom: 0px;
+      h1,
+      span,
+      p {
+        text-align: center;
+      }
+
+      span {
+        max-width: 20%;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        max-width: 25% !important;
+      }
+
+      #geology-wrapper {
+        h1 {
+          max-width: 30% !important;
+        }
+      }
+
+      #geology-wrapper,
+      .row-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .outcome {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .left-section .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px;
+      width: 100%;
+
+      h2,
+      span {
+        text-align: center;
+      }
+
+      .list {
+        ul {
+          padding-left: 70px;
+        }
+      }
+    }
+
+    .right-section {
+      margin-left: 0px;
+    }
+  }
+
+  .partner {
+    .abs {
+      display: none;
+    }
+
+    .content {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 0px;
+
+      h1 {
+        font-size: var(--text-large);
+        max-width: 80%;
+      }
+
+      p,
+      span {
+        max-width: 80%;
+      }
+
+      .cta-button span {
+        font-size: var(--text-medium);
+      }
+    }
+  }
+}

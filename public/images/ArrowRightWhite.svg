@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 108 108">
+  <!-- Generator: Adobe Illustrator 29.5.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 137)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3 {
+        fill: none;
+      }
+
+      .st0, .st2 {
+        stroke: #fff;
+        stroke-linecap: round;
+      }
+
+      .st0, .st2, .st3 {
+        stroke-width: 3px;
+      }
+
+      .st2 {
+        stroke-linejoin: round;
+      }
+
+      .st3 {
+        stroke: #903;
+      }
+    </style>
+  </defs>
+  <g id="Arrow_right">
+    <g id="Ellipse_3">
+      <circle class="st1" cx="54" cy="54" r="54"/>
+      <circle class="st3" cx="54" cy="54" r="52.5"/>
+    </g>
+    <g id="Group_16">
+      <path id="Path_31" class="st2" d="M35,54.8h38l-12.3,15.4"/>
+      <path id="Path_32" class="st0" d="M73,54.8l-12.3-16"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,282 @@
+:root {
+  --text-tiny: 0.625rem; // 10px
+  --text-small: 0.75rem; // 12px
+  --text-regular: 1rem; // 16px
+  --text-medium: 1.125rem; // 18px
+  --text-large: 1.5rem; // 24px
+  --text-xlarge: 2rem; // 32px
+  --text-xxlarge: 3rem; // 48px
+  --text-huge: 4rem; // 64px
+  --text-massive: 6rem; // 96px
+  --navbar-bkg: #dad6cc;
+  --color2: #d29b00;
+  --color3: #45596d;
+  --color4: #e9e8e3;
+  --color5: #b81416;
+  --color6: #adc2cc;
+  --primary-font: "PrimaryFont", sans-serif;
+  --secondary-font: "SecondaryFont", sans-serif;
+  --tertiary-font: "TertiaryFont", sans-serif;
+  --regular-font: "RegularFont", sans-serif;
+}
+
+.process-items-component {
+  margin-top: 100px !important;
+  height: 500px;
+  @media screen and (max-width: 768px) {
+    .process-description-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+
+.extra-image-container {
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0px;
+    padding-top: 30px;
+  }
+  padding-bottom: 30px;
+  img {
+    width: 900px !important;
+    height: 120px;
+
+    @media screen and (max-width: 768px) {
+      width: 80% !important;
+      height: 100%;
+    }
+  }
+}
+
+.mobile-nav-overlay {
+  display: none;
+}
+
+@font-face {
+  font-family: "PrimaryFont";
+  src: url("../public/fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SecondaryFont";
+  src: url("../public/fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TertiaryFont";
+  src: url("../public/fonts/Ubuntu-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RegularFont";
+  src: url("../public/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+h1 {
+  font-family: var(--secondary-font);
+  letter-spacing: 7px;
+}
+
+h2 {
+  font-family: var(--tertiary-font);
+}
+
+p {
+  font-family: var(--regular-font);
+}
+
+.back-to-top {
+  background-color: var(--color3);
+  position: fixed;
+  bottom: 20%;
+  right: 0px;
+  width: 90px;
+  height: 90px;
+  z-index: 99999999;
+  border-radius: 30px 0px 0px 30px;
+  cursor: pointer;
+
+  h3 {
+    margin-top: 8px;
+    font-family: var(--tertiary-font);
+    font-weight: normal;
+    font-size: var(--text-medium);
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.ac {
+  align-items: center;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.section-wrapper {
+  //   border: 2px solid blue;
+  width: min(1200px, 95%);
+  height: 100vh;
+  //   text-align: center;
+  padding-block: 40px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: visible !important;
+}
+
+.main-content {
+  flex: 1; // Pushes the footer down
+  width: 100%;
+  height: 100%;
+  // overflow-x: hidden;
+  // overflow-y: auto;
+  // max-width: 1200px;
+  // margin: 20px auto;
+}
+
+// Pulse Animation SCSS
+
+// Define the keyframes for the pulse animation
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// The pulse class that can be applied to any element
+.pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+
+  // Optional customization variables (can be overridden by inline styles)
+  --pulse-duration: 1.5s;
+  --pulse-scale: 1.05;
+  --pulse-min-opacity: 0.8;
+
+  // Allow customizing the animation properties via CSS variables
+  &.pulse-custom {
+    animation: pulse var(--pulse-duration) ease-in-out infinite;
+  }
+
+  // Variants
+  &.pulse-slow {
+    animation-duration: 3s;
+  }
+
+  &.pulse-fast {
+    animation-duration: 0.8s;
+  }
+
+  &.pulse-subtle {
+    --pulse-scale: 1.02;
+    --pulse-min-opacity: 0.9;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  &.pulse-strong {
+    --pulse-scale: 1.1;
+    --pulse-min-opacity: 0.7;
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+
+  // Pause animation when the page is not visible
+  &.pulse-efficient {
+    animation-play-state: var(--play-state, running);
+  }
+}
+
+// Create keyframes that respect custom scaling and opacity
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(var(--pulse-scale, 1.05));
+    opacity: var(--pulse-min-opacity, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// Add a utility to make a pulse animation only on hover
+.pulse-on-hover {
+  &:hover {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+  .advisory-tabs {
+    min-height: 100vh !important;
+
+    // .tabs-header {
+    //   margin-top: -60px;
+    // }
+
+    #env-tabs .tabs-header {
+      margin-top: -60px !important;
+      margin-bottom: 0px !important;
+    }
+
+    // .corp-tabs {
+    //   scale: 0.9;
+    // }
+  }
+
+  .wide-screen-carousel {
+    min-height: 100vh !important;
+  }
+}

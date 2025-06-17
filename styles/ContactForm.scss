@@ -1,0 +1,110 @@
+.contact-form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  // padding: 40px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  padding-block: 15rem;
+
+  @media screen and (min-width: 1400px) and (max-width: 1700px) {
+    margin-top: -50px;
+  }
+
+  .form-left {
+    max-width: 500px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .form-title {
+    font-family: var(--primary-font) !important;
+    font-size: var(--text-xxlarge) !important;
+    text-align: right;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .form-subtext {
+    font-size: var(--text-large) !important;
+    margin-top: 10px;
+    max-width: 40%;
+    text-align: right;
+  }
+
+  .form-right {
+    // background: rgba(255, 255, 255, 0.1);
+    padding: 0px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 60% !important;
+  }
+
+  .input-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  input,
+  textarea {
+    // flex: 1;
+    padding: 10px;
+    border: 2px solid #900d23;
+    background: white;
+    color: black;
+    font-size: 14px;
+  }
+
+  input {
+    height: 60px;
+    width: 100% !important;
+  }
+
+  textarea {
+    height: 200px !important;
+    width: 100%;
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-block: 20px;
+    font-size: 12px;
+    height: 50px !important;
+  }
+
+  .checkbox-container input {
+    margin-right: -17px;
+    width: 100px !important;
+    height: 60px;
+    scale: 0.5;
+    background-color: white;
+  }
+
+  .submit-button {
+    background: #900d23;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+  }
+
+  .arrow {
+    margin-left: 10px;
+  }
+}

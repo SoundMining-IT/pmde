@@ -1,0 +1,98 @@
+@media screen and (max-width: 768px) {
+  #corporate-advisory-hero-container {
+    .content {
+      margin-top: 80%;
+
+      .title {
+        max-width: 80% !important;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: var(--text-large) !important;
+      }
+
+      .subtitle {
+        max-width: 80% !important;
+        text-align: center;
+        padding-left: 0px;
+      }
+
+      .description {
+        position: absolute;
+        font-size: var(--text-large);
+        top: -30% !important;
+        text-align: center;
+        left: 30%;
+      }
+    }
+  }
+
+  .advisory-tabs {
+    padding-bottom: 100px;
+    .section-label h1 {
+      text-align: center;
+      font-size: var(--text-xlarge);
+      display: flex;
+      justify-content: center;
+      padding-top: 15vh;
+    }
+
+    .tabs-header {
+      display: grid;
+      justify-content: center;
+      gap: 0px;
+    }
+
+    .tabs-content .content-area {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    .tabs-container .tabs-content .content-area .tab-layout {
+      display: flex;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-direction: column;
+
+      .left-section img {
+        width: 150px;
+        padding-bottom: 50px;
+      }
+
+      .right-section {
+        border-left: none;
+        padding-left: 0px;
+
+        .right-double {
+          align-items: center;
+        }
+
+        .right-down {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          strong,
+          p,
+          h2 {
+            text-align: center !important;
+          }
+        }
+
+        h3 {
+          text-align: center;
+          display: none !important;
+        }
+
+        .subtabs-container {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  #solutions-container .cta-button {
+    width: unset;
+  }
+}
