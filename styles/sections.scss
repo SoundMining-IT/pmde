@@ -9,6 +9,16 @@
   z-index: 99 !important;
   // margin-top: -200px;
 
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .text-content {
+      width: 50% !important;
+    }
+
+    .prev {
+      left: 13% !important;
+    }
+  }
+
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
     min-height: 110vh;
 
@@ -370,6 +380,13 @@
   z-index: 9;
   overflow: hidden;
 
+  @media screen and (min-width: 1100px) and (max-width: 1400px) {
+    .section-label h1 {
+      max-width: 100% !important;
+      margin-left: 50px !important;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .section-label {
       width: 100% !important;
@@ -401,6 +418,10 @@
     justify-content: flex-end;
     display: flex;
     width: 100%;
+
+    @media screen and (min-width: 1100px) and (max-width: 1400px) {
+      margin-right: 43% !important;
+    }
 
     @media screen and (max-width: 768px) {
       align-items: center !important;

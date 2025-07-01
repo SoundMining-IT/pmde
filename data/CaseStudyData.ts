@@ -53,7 +53,7 @@ export const SteelpoortCaseStudyData: CaseStudyData = {
       "Optimal resource allocation to meet production goals.",
       "Mobilisation of contractors, meaning mining could swiftly commence in the new area, safeguarding community jobs and maintaining operational continuity."
     ],
-    outcomeRightSectionImage: "/updatedImages/Side-3.webp",
+    outcomeRightSectionImage: "/updatedImages/Side-3.jpg",
     partnerBannerImage: "/images/Banner.png",
     partnerTitle: "Partner with PMDE for proven mineral expertise",
     partnerDescription: "With a track record of delivering tailored solutions, PMDE provides the technical expertise needed to overcome complex mineral challenges. From resource estimation to operational efficiency, our team ensures accurate data, streamlined processes, and optimised planning.",
@@ -110,7 +110,7 @@ export const DrillholeCaseStudyData: CaseStudyData = {
     outcomeListItems: [
       "62% reduction in the backlog of 2023 drillholes.",
       "Enhanced capacity for the next mineral resource update by incorporating previously unutilised drillhole data.",
-      "Decrease in xxx operational inefficiencies.",
+      "Significant decrease in operational inefficiencies.",
       "Independent resolution of the backlog allowed the client’s in-house MRM (Mineral Resource Management) team to focus on day-to-day geological studies and production sampling.",
       "Greater orebody delineation for accurate resource and reserve planning.",
     ],
@@ -126,7 +126,7 @@ export const VanadiumCaseStudyData: CaseStudyData = {
   heroImage: "/updatedImages/Custom1.webp",
   heroTitle: "Comprehensive Support for Vanadium Mine Development, Driving Project Value to $1.05 Billion",
   heroIntroText: "An ASX-listed vanadium mining company aimed to develop a new project in South Africa but faced technical challenges, financial constraints, and community resistance.",
-  heroDescription: "To advance the project, PMDE provided geological modelling, feasibility studies, financial advisory, and stakeholder engagement. Their support increased the project's value to $1.05 billion and secured long-term operational stability.",
+  heroDescription: "To advance the project, PMDE provided geological modelling, feasibility studies, financial advisory, and stakeholder engagement. Their support increased the project's value to $1.05 billion and secured long-term operational stability. By maintaining a long-term partnership, Sound Mining ensured the company had the necessary expertise at every stage, from exploration to execution.",
   clientImage: "/images/TopVanadium.webp",
   clientTitle: "About the client",
   clientDescription: "The client is an ASX-listed vanadium mining company looking to develop a major new project in South Africa. The company needed comprehensive support across all stages of the mine development lifecycle, from exploration to execution.",

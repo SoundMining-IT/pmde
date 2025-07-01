@@ -157,7 +157,7 @@ const TestimonialCarousel = () => {
               className="testimonial-slide"
             >
               <p className="text">{currentTestimonial.text}</p>
-              <div className="author-details">
+              {/* <div className="author-details">
                 <span className="name">
                   {currentTestimonial.name?.toUpperCase()}
                 </span>
@@ -166,7 +166,7 @@ const TestimonialCarousel = () => {
                   {currentTestimonial.company}
                   {currentTestimonial.corp && ` (${currentTestimonial.corp})`}
                 </span>
-              </div>
+              </div> */}
             </motion.div>
           </AnimatePresence>
         </div>

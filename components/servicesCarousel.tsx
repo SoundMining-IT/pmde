@@ -54,37 +54,38 @@ const ServicesCarousel = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [fadeState, setFadeState] = useState("fade-in");
 
-  const nextSlide = () => {
+  // A single handler for both next and previous navigation
+  const handleNavigation = (direction: any) => {
+    // Prevent multiple clicks during an animation
     if (isAnimating) return;
 
     setIsAnimating(true);
     setFadeState("fade-out");
 
+    // Wait for the fade-out animation (300ms) to complete
     setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+      // Once invisible, update the index
+      setCurrentIndex((prevIndex) => {
+        if (direction === "next") {
+          return (prevIndex + 1) % slides.length;
+        } else {
+          return (prevIndex - 1 + slides.length) % slides.length;
+        }
+      });
+
+      // Start the fade-in animation for the new content
       setFadeState("fade-in");
+
+      // Wait for the fade-in animation to finish before allowing another click
+      // This timeout ensures the full fade cycle completes.
       setTimeout(() => {
         setIsAnimating(false);
-      }, 500);
-    }, 300);
+      }, 300); // This duration should match the CSS transition duration
+    }, 300); // This duration should match the CSS transition duration
   };
 
-  const prevSlide = () => {
-    if (isAnimating) return;
-
-    setIsAnimating(true);
-    setFadeState("fade-out");
-
-    setTimeout(() => {
-      setCurrentIndex(
-        (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
-      );
-      setFadeState("fade-in");
-      setTimeout(() => {
-        setIsAnimating(false);
-      }, 500);
-    }, 300);
-  };
+  const nextSlide = () => handleNavigation("next");
+  const prevSlide = () => handleNavigation("prev");
 
   return (
     <div className="advisory-carousel">
@@ -93,9 +94,13 @@ const ServicesCarousel = () => {
           <img src="/images/Arrow left.svg" alt="Previous" />
         </button>
 
+        {/* The fadeState class now controls the transition */}
         <div className={`slide ${fadeState}`}>
           <div className="icon-container">
             <img
+              // Add a key to force React to re-render the img element on change,
+              // preventing any potential flickering or stale image issues.
+              key={currentIndex}
               src={slides[currentIndex].icon}
               alt="Slide Icon"
               className="slide-icon"
@@ -123,6 +128,7 @@ const ServicesCarousel = () => {
         </button>
       </div>
 
+      {/* The CSS remains the same as it correctly handles the animation */}
       <style jsx>{`
         .advisory-carousel {
           position: relative;
@@ -138,7 +144,8 @@ const ServicesCarousel = () => {
 
         .slide {
           display: flex;
-          transition: opacity 0.3s ease;
+          /* The transition property makes the opacity change smooth */
+          transition: opacity 0.3s ease-in-out;
         }
 
         .fade-in {
@@ -156,6 +163,11 @@ const ServicesCarousel = () => {
           cursor: pointer;
           z-index: 10;
           padding: 10px;
+        }
+
+        .prev:disabled,
+        .next:disabled {
+          cursor: wait;
         }
       `}</style>
     </div>

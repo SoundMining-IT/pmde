@@ -207,7 +207,7 @@ const miningCaseStudies = [
   {
     id: "3",
     title:
-      "Comprehensive Support for Vanadium Mine Development, Driving Project Value to $1.05",
+      "Comprehensive Support for Vanadium Mine Development, Driving Project Value to $1.05 billion",
     image: "/updatedImages/Blog12.webp",
     alt: "Yellow mining trucks on a road",
     link: "/case-studies/comprehensive-support-for-vanadium-mine-development-driving-project-value-to-1-05",

@@ -5,6 +5,16 @@
   justify-content: center;
   position: relative;
 
+  @media screen and (min-width: 989px) and (max-width: 1400px) {
+    .nav-button.right {
+      right: 12% !important;
+    }
+
+    .nav-button.left {
+      left: 12% !important;
+    }
+  }
+
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
     .cta-button {
       padding-top: 30px !important;

@@ -19,6 +19,7 @@ const TechnicalExpertise = () => {
     "Multidisciplinary technical expertise across the minerals project lifecycle. Learn how our specialists deliver integrated, practical, and proven solutions.";
   const pageImage = "/images/PMDELogo.jpg";
   const imageAlt = "PMDE Logo";
+
   return (
     <Layout>
       <SeoMeta

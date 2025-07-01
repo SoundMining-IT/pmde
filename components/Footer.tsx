@@ -19,9 +19,13 @@ const Footer = () => {
           >
             <img src="/images/linkedin.svg" alt="linkedin" />
           </Link>
-          {/* <Link href="/" target="_blank" className="social-link">
+          <Link
+            href="https://www.youtube.com/@SoundMining"
+            target="_blank"
+            className="social-link"
+          >
             <img src="/images/Youtube.svg" alt="linkedin" />
-          </Link> */}
+          </Link>
         </div>
       </div>
     </footer>

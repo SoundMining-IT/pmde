@@ -13,7 +13,7 @@ interface TeamMember {
 
 const teamMembersData: TeamMember[] = [
   {
-    name: "VAUGHN",
+    name: "VAUGHN DUKE",
     title: "Founding Partner & Director",
     image: "/images/Group_1487.webp",
     linkedinUrl: "https://www.linkedin.com/in/vaughn-duke-76596ba/",
@@ -21,7 +21,7 @@ const teamMembersData: TeamMember[] = [
       "Vaughn brings over 20 years of experience in strategic leadership and business development in the mining sector. He co-founded Sound Mining with a vision to drive innovation and excellence.",
   },
   {
-    name: "PIETER",
+    name: "PIETER POTGIETER",
     title: "Director & Mining Engineer",
     image: "/images/Group_1489.webp",
     linkedinUrl: "https://www.linkedin.com/in/pieter-potgieter-7484822b/",
@@ -29,7 +29,7 @@ const teamMembersData: TeamMember[] = [
       "Pieter is a seasoned Mining Engineer with expertise in project management and operational efficiency. He plays a key role in delivering value to our clients.",
   },
   {
-    name: "DIANA",
+    name: "DIANA Van BUREN",
     title: "Director & Geologist",
     image: "/images/Group_1490.webp",
     linkedinUrl: "https://www.linkedin.com/in/diana-van-buren-60392a2b/",
@@ -37,7 +37,7 @@ const teamMembersData: TeamMember[] = [
       "Diana is a highly skilled Geologist with a strong background in resource estimation and exploration. Her insights are crucial for project success.",
   },
   {
-    name: "ROCHELLE",
+    name: "ROCHELLE BLUNDEN",
     title: "Director & Mining Engineer",
     image: "/images/Group_1486.webp",
     linkedinUrl: "https://www.linkedin.com/in/rochelle-blunden-013b4990/",
@@ -45,7 +45,7 @@ const teamMembersData: TeamMember[] = [
       "Rochelle specializes in mine planning and sustainable mining practices. She is dedicated to implementing innovative solutions for complex challenges.",
   },
   {
-    name: "NICHOLAS",
+    name: "NICHOLAS WEEKS",
     title: "Director & Geologist",
     image: "/images/Group_1488.webp",
     linkedinUrl: "https://www.linkedin.com/in/nicholas-weeks-44aaa6168/",

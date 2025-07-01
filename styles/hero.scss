@@ -247,6 +247,13 @@
       top: -60px !important;
     }
   }
+
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .content {
+      bottom: -50% !important;
+    }
+  }
+
   .content {
     display: flex;
     flex-direction: row;
@@ -282,6 +289,19 @@
       top: 0px !important;
     }
   }
+
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .content {
+      margin-left: 300px !important;
+      bottom: -40% !important;
+    }
+
+    .subtitle {
+      right: -50px !important;
+      top: -10px !important;
+    }
+  }
+
   .content {
     display: flex;
     margin-top: 12%;
@@ -359,6 +379,18 @@
       top: 50px !important;
     }
   }
+
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .content {
+      position: relative !important;
+      top: 250px !important;
+    }
+
+    .subtitle {
+      top: 55px !important;
+    }
+  }
+
   .content {
     display: flex;
     top: 100px;
@@ -423,6 +455,18 @@
 
     .subtitle {
       top: 25px !important;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .content {
+      margin-left: 300px !important;
+      bottom: -40% !important;
+    }
+
+    .subtitle {
+      right: -50px !important;
+      top: 30px !important;
     }
   }
   .content {
@@ -499,6 +543,23 @@
     }
   }
 
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .content {
+      margin-left: 300px !important;
+      bottom: -40% !important;
+    }
+
+    .subtitle {
+      right: -50px !important;
+      top: 30px !important;
+    }
+
+    .title {
+      max-width: 70% !important;
+      margin-left: -140px !important;
+    }
+  }
+
   .content {
     margin-top: 10%;
     margin-left: 500px;
@@ -560,6 +621,18 @@
       margin-top: 19% !important;
     }
   }
+
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .content {
+      margin-left: 100px !important;
+      bottom: -40% !important;
+    }
+
+    .subtitle {
+      right: -50px !important;
+      top: 120px !important;
+    }
+  }
   .content {
     margin-top: 10%;
     margin-left: 300px;
@@ -599,6 +672,18 @@
 
     .hero-foreground-image {
       top: -0px !important;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .content {
+      margin-left: 300px !important;
+      top: 5% !important;
+    }
+
+    .subtitle {
+      right: -50px !important;
+      top: -100px !important;
     }
   }
   .content {

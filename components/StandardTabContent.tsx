@@ -19,110 +19,120 @@ type StandardTabContentProps = {
   p1Regular: string;
   subHeading?: string;
   items?: TabItem[];
-  extraImage?: string; // Add this
+  extraImage?: string;
   ctaText: string;
   ctaHref: string;
 };
 
-const StandardTabContent: React.FC<StandardTabContentProps> = ({
-  logoTitle,
-  image,
-  altText,
-  heading,
-  p1Strong,
-  p1Regular,
-  subHeading,
-  extraImage,
-  items = [], // Default to empty array to prevent errors
-  ctaText,
-  ctaHref,
-}) => {
+const StandardTabContent: React.FC<StandardTabContentProps> = (props) => {
+  // --- START: NEW LOGIC FOR INSTANT TRANSITIONS ---
+
+  // 'activeContent' holds the data that is CURRENTLY visible on screen.
+  // We initialize it with the first set of props the component receives.
+  const [activeContent, setActiveContent] = useState(props);
+
+  // 'fadeState' controls the CSS class for the fade animation ('fade-in' or 'fade-out').
+  const [fadeState, setFadeState] = useState("fade-in");
+
+  // This effect runs whenever the incoming props from the parent component change.
+  useEffect(() => {
+    // We check if the new props are different from the content we are currently showing.
+    // 'heading' is a reliable property to check for a content change.
+    if (props.heading !== activeContent.heading) {
+      // 1. Start the fade-out animation.
+      setFadeState("fade-out");
+
+      // 2. Wait for the fade-out animation (300ms) to complete.
+      const timer = setTimeout(() => {
+        // 3. Once invisible, INSTANTLY update the content with the new props...
+        setActiveContent(props);
+        // 4. ...and immediately trigger the fade-in animation for the new content.
+        setFadeState("fade-in");
+      }, 300); // IMPORTANT: This duration must match your CSS transition time.
+
+      // Cleanup function to clear the timeout if the component unmounts mid-transition.
+      return () => clearTimeout(timer);
+    }
+  }, [props, activeContent.heading]); // This effect depends on the incoming props.
+
+  // --- END: NEW LOGIC FOR INSTANT TRANSITIONS ---
+
+  // --- Sub-item rotation logic (now uses 'activeContent' instead of 'props') ---
   const [activeIconIndex, setActiveIconIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false); // Start unpaused for auto-rotation
+  const [isPaused, setIsPaused] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Function to start or restart the rotation timer
-  const startRotation = () => {
-    if (timerRef.current) {
-      clearInterval(timerRef.current);
-    }
-    // Don't rotate if 0 or 1 item, or if paused
-    if (items.length <= 1 || isPaused) return;
+  // We now get the 'items' from our internal 'activeContent' state.
+  const { items = [] } = activeContent;
 
-    timerRef.current = setInterval(() => {
-      // We only advance if it's not paused when the interval fires
-      // Using functional update is safer if state updates could be rapid,
-      // but checking isPaused directly here is fine for this interval logic.
-      if (!isPaused) {
-        setActiveIconIndex((prevIndex) => (prevIndex + 1) % items.length);
-      }
-    }, 3000);
-  };
-
-  // Effect to manage the rotation timer based on items and pause state
   useEffect(() => {
-    startRotation(); // Attempt to start rotation initially and whenever dependencies change
+    const startRotation = () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+      if (items.length <= 1 || isPaused) return;
 
-    // Cleanup function to clear interval when component unmounts
-    // or when dependencies (items.length, isPaused) change before next effect run
-    return () => {
-      if (timerRef.current) {
-        clearInterval(timerRef.current);
-      }
+      timerRef.current = setInterval(() => {
+        if (!isPaused) {
+          setActiveIconIndex((prevIndex) => (prevIndex + 1) % items.length);
+        }
+      }, 3000);
     };
-  }, [items.length, isPaused]); // Rerun effect if item count changes or pause state changes
+    startRotation();
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [items.length, isPaused]);
 
-  // Effect to reset index and pause state when the items array itself changes (e.g., switching main tabs)
+  // Effect to reset the sub-item carousel when the main content changes.
   useEffect(() => {
     setActiveIconIndex(0);
-    setIsPaused(false); // Reset to unpaused when items change
-    // The main effect [items.length, isPaused] will handle restarting the timer
-  }, [items]); // Dependency is the items array instance
+    setIsPaused(false);
+  }, [items]);
 
   // Event Handlers for Subtab Interaction
   const handleMouseEnter = (index: number) => {
     setActiveIconIndex(index);
-    setIsPaused(true); // Pause rotation on hover
+    setIsPaused(true);
   };
-
   const handleMouseLeave = () => {
-    setIsPaused(false); // Resume rotation on leave
-    // The main effect handles restarting the timer when isPaused becomes false
+    setIsPaused(false);
   };
-
   const handleClick = (index: number) => {
     setActiveIconIndex(index);
-    setIsPaused(true); // Keep paused on click (or optionally resume after timeout)
-    // Example: Resume after 5 seconds
-    // setTimeout(() => {
-    //   setIsPaused(false);
-    // }, 5000);
+    setIsPaused(true);
   };
 
+  // The entire component now renders based on 'activeContent'
+  // and has the 'fadeState' class on its root element for animations.
   return (
-    <div className="tab-layout">
-      {" "}
-      {/* Keep original class names for styling */}
+    <div className={`tab-layout ${fadeState}`}>
       <div className="left-section flex col ac jc">
-        {logoTitle && <h2 id="logo-title">{logoTitle}</h2>}
-        <img src={image} alt={altText} />
+        {activeContent.logoTitle && (
+          <h2 id="logo-title">{activeContent.logoTitle}</h2>
+        )}
+        {/* We add a 'key' here. This tells React it's a new element, ensuring a clean re-render. */}
+        <img
+          key={activeContent.image}
+          src={activeContent.image}
+          alt={activeContent.altText}
+        />
       </div>
+
       <div className="right-section">
         <div className="right-down">
           <h2>
-            <strong>{heading}</strong>
+            <strong>{activeContent.heading}</strong>
           </h2>
           <div className="right-double">
-            {p1Strong && (
+            {activeContent.p1Strong && (
               <p style={{ paddingBottom: "20px" }}>
-                <strong>{p1Strong}</strong>
+                <strong>{activeContent.p1Strong}</strong>
               </p>
             )}
-            <p>{p1Regular}</p>
+            <p>{activeContent.p1Regular}</p>
           </div>
         </div>
         <h3 style={{ paddingTop: "20px", color: "var(--color3)" }}>
-          <strong>{subHeading}</strong>
+          <strong>{activeContent.subHeading}</strong>
         </h3>
 
         {/* Render subtabs container only if there are items */}
@@ -155,17 +165,57 @@ const StandardTabContent: React.FC<StandardTabContentProps> = ({
               </div>
             ))}
           </div>
-        ) : extraImage ? (
+        ) : activeContent.extraImage ? (
           <div className="extra-image-container">
-            <img src={extraImage} alt="Valuations Supplementary Visual" />
+            <img
+              src={activeContent.extraImage}
+              alt="Valuations Supplementary Visual"
+            />
           </div>
         ) : null}
 
         <div className="cta-button-container">
-          {/* Render the button component directly */}
-          <AnimatedButton text={ctaText} href={ctaHref} />
+          <AnimatedButton
+            text={activeContent.ctaText}
+            href={activeContent.ctaHref}
+          />
         </div>
       </div>
+
+      {/* The required CSS for the fade transition. */}
+      {/* You can move this to your global CSS file if you prefer. */}
+      <style jsx>{`
+        .tab-layout {
+          /* Add your existing layout styles here (e.g., display: flex) */
+          transition: opacity 0.3s ease-in-out;
+        }
+        .fade-in {
+          opacity: 1;
+        }
+        .fade-out {
+          opacity: 0;
+        }
+
+        /* --- Your existing styles below --- */
+        .left-section {
+          /* Your styles */
+        }
+        .right-section {
+          /* Your styles */
+        }
+        #logo-title {
+          /* Your styles */
+        }
+        img {
+          /* Your styles */
+        }
+        .subtabs-container {
+          /* Your styles */
+        }
+        .subtab-item {
+          /* Your styles */
+        }
+      `}</style>
     </div>
   );
 };
