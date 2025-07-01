@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image"; // 1. Import next/image for preloading
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const slides = [
@@ -41,15 +42,6 @@ const slides = [
     leftImage: "/images/Why-Choose-Us__0008_Layer-10.webp",
     rightImage: "/images/Why-Choose-Us__0009_Layer-0.webp",
   },
-  // {
-  //   id: 5,
-  //   text: "Integrity First",
-  //   subtext: "Integrity is at the heart of everything we do. ",
-  //   description:
-  //     "We build relationships based on honesty, professionalism, and trust, ensuring ethical conduct and transparency in every interaction, giving you confidence.",
-  //   leftImage: "/images/integrity-left.jpg",
-  //   rightImage: "/images/integrity-right.jpg",
-  // },
 ];
 
 const ChooseUsCarousel: React.FC = () => {
@@ -63,7 +55,7 @@ const ChooseUsCarousel: React.FC = () => {
     setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
-  // Get current slide images
+  // Your original styling logic remains untouched
   const currentSlide = slides[currentIndex];
   const leftBackgroundStyle = {
     backgroundImage: `url(${currentSlide.leftImage})`,
@@ -81,7 +73,28 @@ const ChooseUsCarousel: React.FC = () => {
 
   return (
     <div className="carousel-container">
+      {/* 2. ADD THIS HIDDEN DIV TO PRELOAD ALL IMAGES */}
+      {/* This renders tiny, invisible images, forcing Next.js to download and cache them on page load. */}
+      {/* Your visible component below can then access them instantly from the cache. */}
+      <div style={{ display: "none" }}>
+        {slides.map((slide) => (
+          <React.Fragment key={`preload-${slide.id}`}>
+            <Image src={slide.leftImage} alt="" width={1} height={1} priority />
+            <Image
+              src={slide.rightImage}
+              alt=""
+              width={1}
+              height={1}
+              priority
+            />
+          </React.Fragment>
+        ))}
+      </div>
+
+      {/* --- ALL THE CODE BELOW IS YOUR ORIGINAL CODE, UNCHANGED --- */}
+
       <button className="nav-button left" onClick={prevSlide}>
+        {/* Using a standard img tag here to keep it simple and match original intent */}
         <img src="/images/Arrow left.svg" alt="Previous" />
       </button>
 
