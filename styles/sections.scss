@@ -107,10 +107,27 @@
   align-items: center;
   padding-top: 30vh;
   padding-bottom: 22vh;
+  @media screen and (min-width: 769px) and (max-width: 1400px) {
+    .text-content {
+      padding-left: 50px;
+    }
+
+    .icon-container {
+      scale: 0.8;
+    }
+  }
 
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
     .cta-button {
       bottom: -40% !important;
+    }
+
+    .text-content {
+      padding-left: 50px;
+    }
+
+    .icon-container {
+      scale: 0.8;
     }
   }
 
@@ -139,7 +156,7 @@
   background-image: url("/images/Testimonial.webp");
 
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
-    min-height: 200vh;
+    min-height: 120vh;
     overflow: hidden !important;
   }
 
@@ -152,6 +169,11 @@
     top: 0px !important;
     z-index: 99999;
     backdrop-filter: blur(8px);
+
+    @media screen and (min-width: 1400px) and (max-width: 1700px) {
+      position: relative;
+      top: -100px !important;
+    }
 
     .stat-wrapper {
       gap: 5rem;
@@ -343,6 +365,14 @@
     .carousel-container {
       padding: 0px !important;
 
+      .right {
+        right: -10% !important;
+      }
+
+      .left {
+        left: -10% !important;
+      }
+
       .text-box {
         height: 430px !important;
       }
@@ -486,8 +516,13 @@
     .abs {
       position: absolute;
       right: -50%;
-      scale: 0.7;
+      scale: 1;
       top: -90%;
+
+      img {
+        width: 80% !important;
+        height: 90% !important;
+      }
     }
 
     h2 {
@@ -1089,10 +1124,10 @@
 
 #env-tabs {
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
-    padding: 20px 0px !important;
+    // padding: 20px 0px !important;
 
     .tabs-header {
-      margin-bottom: 20px !important;
+      margin-block: 20px !important;
     }
 
     .tabs-content {

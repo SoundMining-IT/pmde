@@ -169,7 +169,13 @@
 }
 
 .testimonial-carousel-redesign {
-  padding-top: 200px;
+  // padding-top: 200px;
+
+  @media screen and (min-width: 1400px) and (max-width: 1700px) {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
 }
 
 .quotes {
