@@ -86,11 +86,11 @@
     }
 
     .mobile-navigation .left {
-      left: -5% !important;
+      left: -8% !important;
     }
 
     .mobile-navigation .right {
-      left: 80% !important;
+      right: -8% !important;
     }
   }
 
@@ -109,11 +109,11 @@
     h1 {
       text-align: center;
       font-size: var(--text-xlarge);
-      padding-top: 10rem !important;
+      padding-top: 15rem !important;
     }
 
     .map {
-      scale: 0.3;
+      scale: 0.25;
       margin-top: -20vh;
     }
   }
@@ -148,16 +148,26 @@
       }
 
       .right {
-        right: 240px;
+        right: 280px;
         bottom: -150vh;
-
+        scale: 1 !important;
         height: 260px;
+
+        img {
+          width: 32px;
+          height: 32px;
+        }
       }
 
       .left {
-        left: 240px;
+        left: 280px;
         bottom: -150vh;
         height: 260px;
+        scale: 1 !important;
+        img {
+          width: 32px;
+          height: 32px;
+        }
       }
 
       .nav-button {

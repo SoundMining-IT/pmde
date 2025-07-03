@@ -1,24 +1,19 @@
 .mining-carousel {
   position: relative;
   width: 100%;
-  height: 170vh;
+  height: 150vh;
   overflow: hidden;
 
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
+    height: 140vh;
     .info-box {
-      // border: 2px solid #45596D !important;
-      height: 160% !important;
-
-      p {
-        font-size: var(--text-medium);
-      }
+      // border: 2px solid #8b0c1b !important;
+      height: 140% !important;
     }
 
     .prev {
-      left: -23% !important;
+      left: -125px !important;
     }
-
-    height: 200vh;
 
     .free-form-text {
       bottom: 0% !important;
@@ -26,13 +21,12 @@
     }
 
     .cta-button {
-      top: 0px;
       right: 0% !important;
+      top: 0px;
     }
   }
 
   .free-form-text {
-    padding-top: 80%;
     width: 100%;
     position: relative;
     bottom: 0%;
@@ -44,11 +38,16 @@
 
     h1 {
       font-size: var(--text-xxlarge);
-      text-shadow: 5px 2px 10px rgba(0, 0, 0, 0.9);
+      // text-shadow: 5px 2px 10px rgba(0, 0, 0, 0.9);
+      // text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      /* A softer, more spread-out, and centered shadow */
+      text-shadow: 0 0 20px rgba(0, 0, 0, 1);
       text-transform: uppercase;
-      letter-spacing: 8px;
+      letter-spacing: 2px;
       color: white;
       width: 100%;
+      margin-top: 30%;
+      padding-bottom: 50px;
       text-align: center;
     }
   }
@@ -72,12 +71,33 @@
     top: 0px; /* Moves the info-box up to appear as if it's coming out */
     left: 50%;
     transform: translate(-50%, 0);
-    width: 35%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 2;
     height: 80%;
+
+    @media screen and (max-width: 768px) {
+      top: 0% !important;
+
+      .prev,
+      .next {
+        scale: 1 !important;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .prev {
+        left: 30px !important;
+      }
+
+      .next {
+        right: -30px !important;
+      }
+    }
   }
 
   .info-box {
@@ -91,7 +111,8 @@
     border-radius: 0px 0px 30px 30px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
     position: relative;
-    height: 100%;
+    height: fit-content;
+    scale: 0.75 !important;
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0) 20%,
@@ -99,7 +120,7 @@
     );
 
     h2 {
-      padding-top: 50px !important;
+      padding-top: 0% !important;
     }
   }
 
@@ -122,7 +143,7 @@
   }
 
   h2 {
-    color: #45596d;
+    color: #8b0c1b;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -138,6 +159,7 @@
     color: #333;
     font-size: var(--text-large);
     margin-bottom: 20px;
+    position: relative;
   }
 
   .cta-button {
@@ -175,8 +197,8 @@
     top: 60%;
     transform: translateY(-50%);
     background: none;
-    border: 2px solid #45596d;
-    color: #45596d;
+    border: 2px solid #8b0c1b;
+    color: #8b0c1b;
     font-size: var(--text-xxlarge);
     width: 90px;
     height: 90px;
