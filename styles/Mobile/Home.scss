@@ -138,6 +138,13 @@
       }
     }
 
+    .button-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .animated-button {
       position: relative;
       bottom: 0px;

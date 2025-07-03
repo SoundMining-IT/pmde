@@ -268,12 +268,7 @@ const Carousel = ({}) => {
 
               {/* Button with Dynamic Link */}
               <motion.div
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
+                className="button-box"
                 variants={contentVariants}
                 initial="hidden"
                 animate="visible"
