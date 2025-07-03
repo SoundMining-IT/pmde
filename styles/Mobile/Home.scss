@@ -111,16 +111,22 @@
   .wide-screen-carousel {
     clip-path: none;
     margin-top: 0px;
-    min-height: 90vh;
+    min-height: 70vh;
     overflow: visible !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .carousel .slides-container {
       display: flex;
     }
 
     .carousel {
-      margin-top: -100px;
+      margin-top: 0px;
       height: 100% !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       .slide {
         padding: 0px;
@@ -136,7 +142,9 @@
       position: relative;
       bottom: 0px;
       left: 0px;
+      align-self: center;
       z-index: 999 !important;
+      width: 100px !important;
     }
 
     .carousel {
