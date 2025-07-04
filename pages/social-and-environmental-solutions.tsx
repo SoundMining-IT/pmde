@@ -45,10 +45,10 @@ const SocialAnndEnvironmentalSolutions = () => {
           title="Make Your Mining Operations More Sustainable"
           subtitle="Expert guidance on maintaining your social licence, ensuring compliance with environmental and labour laws, and addressing uncertainties."
           description="Social & Environmental Solutions"
-          backgroundImage="/newImages/Hero6Mobile.webp"
+          backgroundImage="/images/SocialBKG.jpg"
         />
         <div id="bottom-icon">
-          <img src="/images/PMDEIcon.svg" alt="Arch" />
+          <img src="/updatedImages/PMDEIcon.svg" alt="Arch" />
         </div>
       </div>
       <section className="wide-screen-carousel">

@@ -135,7 +135,7 @@
     text-align: center;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .title {
       font-size: var(--text-xlarge);
       max-width: 80%;
@@ -200,7 +200,7 @@
   left: 50%;
   z-index: 9999 !important;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: none !important;
   }
 

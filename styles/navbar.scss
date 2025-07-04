@@ -33,7 +33,7 @@
     margin: auto;
     min-height: 12vh;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       min-height: 5vh !important;
     }
     // border: 2px solid blue;
@@ -258,7 +258,7 @@
   }
 
   /* Responsive */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .nav-links {
       display: none;
       flex-direction: column;

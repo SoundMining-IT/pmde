@@ -437,7 +437,7 @@ const Carousel = ({}) => {
         }
 
         /* Optional: Media query from original for responsiveness */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .text-content {
             max-width: 90%;
             padding: 1.5rem;

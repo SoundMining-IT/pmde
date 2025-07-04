@@ -2,7 +2,7 @@
   display: none !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .arrow-icon-wrapper {
     img {
       width: 50% !important;
@@ -215,7 +215,7 @@
 
     p {
       font-size: var(--text-medium);
-      margin-top: -70px;
+      // margin-top: -70px;
     }
 
     .mining-carousel {

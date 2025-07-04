@@ -347,7 +347,7 @@ const TestimonialCarousel = () => {
         }
 
         /* Responsive adjustments */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .testimonial-carousel-redesign {
             height: auto; /* Allow height to adjust */
             min-height: 450px;

@@ -438,7 +438,7 @@ const TeamCarousel = () => {
           height: 35px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .team-carousel-container {
             padding: 0 10px;
             gap: 15px;

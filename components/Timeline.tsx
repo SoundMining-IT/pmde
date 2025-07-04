@@ -411,7 +411,7 @@ const Timeline: React.FC = () => {
           opacity: 0.3;
           cursor: not-allowed;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .timeline-line {
             left: 40px;
           }

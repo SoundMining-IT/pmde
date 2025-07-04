@@ -292,7 +292,7 @@ const PrivacyPolicyPage: NextPage = () => {
           }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .policy-container {
             padding: 20px 25px;
             margin: 20px auto;

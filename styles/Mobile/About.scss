@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #about-us-hero-container {
     .hero-mobile {
       background-color: #e9e8e3 !important;
@@ -174,5 +174,50 @@
         scale: 0.6;
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .back-to-top {
+    width: 60px;
+    height: 80px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .mining-design-carousel .mining-carousel .prev {
+    left: 60px;
+    top: 357px;
+  }
+
+  .mining-design-carousel .mining-carousel .next {
+    top: 357px;
+  }
+
+  .advisory-tabs .section-label h1 {
+    max-width: 70% !important;
+  }
+
+  .advisory-tabs .section-label {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+
+  .case-studies .case-studies-content-wrapper {
+    margin-top: 10vh !important;
+  }
+
+  .outcome .left-section {
+    min-height: 100vh !important;
+    height: 100vh;
+  }
+
+  .challenging-environment .content h1 {
+    font-size: var(--text-large) !important;
   }
 }

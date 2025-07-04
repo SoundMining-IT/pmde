@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .subtabs-container {
     display: none !important;
   }
@@ -71,7 +71,7 @@
   padding-bottom: 50px;
   text-transform: uppercase;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     text-align: center !important;
     margin-right: 0px !important;
     font-size: var(--text-large) !important;
@@ -203,7 +203,7 @@
 #wide-screen-carousel-about {
   padding-block: 200px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding-bottom: -60px !important;
     padding-top: 0px !important;
   }
@@ -271,7 +271,7 @@
   margin-top: -200px;
   overflow: hidden;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .cta-button {
       margin-bottom: 50px !important;
       padding-top: 0px !important;
@@ -299,7 +299,7 @@
   }
 
   .timeline-section {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       display: none !important;
     }
 
@@ -325,7 +325,7 @@
   min-height: 100vh;
   background-color: white;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     height: 70vh !important;
     h1 {
       padding-block: 1rem !important;
@@ -401,7 +401,7 @@
   background-image: url("../public/updatedImages/Contact.webp");
   margin-bottom: -150px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     background-image: url("../public/newImages/Hero9Mobile.webp");
   }
 }
@@ -419,7 +419,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .section-label {
       width: 100% !important;
       justify-content: center;
@@ -456,7 +456,7 @@
       margin-right: 43% !important;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       align-items: center !important;
       margin-right: 0px !important;
     }
@@ -620,7 +620,7 @@
   background-color: white;
   padding-top: 200px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding-top: 0px !important;
   }
 
@@ -642,7 +642,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 5rem;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
         display: flex !important;
         flex-direction: column !important;
       }
@@ -859,7 +859,7 @@
   margin-top: -200px;
   position: relative;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     grid-template-columns: repeat(1, 1fr) !important;
 
     .content {
@@ -1037,7 +1037,7 @@
   background-color: white;
   min-height: 100vh;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .content {
       flex-direction: column !important;
       justify-content: center !important;
@@ -1117,7 +1117,7 @@
     height: 100%;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: none !important;
   }
 }
@@ -1138,7 +1138,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .tabs-content {
     display: flex !important;
     flex-direction: column !important;
@@ -1148,7 +1148,7 @@
 }
 
 .infra-carousel-button {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     width: 100px !important;
     height: 100px !important;
   }
@@ -1179,7 +1179,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .right-image {
       display: none !important;
     }
@@ -1236,7 +1236,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }

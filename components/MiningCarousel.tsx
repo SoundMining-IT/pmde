@@ -36,7 +36,7 @@ const slides = [
   {
     title: "END-TO-END ADVISORY ACROSS THE MINING LIFECYCLE",
     description:
-      "At PMDE, our design specialists collaborate across disciplines to create integrated designs backed by extensive experience and proprietary knowledge, delivering unrivalled results.",
+      "At Sound Mining, our design specialists collaborate across disciplines to create integrated designs backed by extensive experience and proprietary knowledge, delivering unrivalled results.",
     backgroundImage: "/images/LottieBackground.webp",
     animationPath: "/lotties/3.json",
     buttonText: "LEARN MORE",
@@ -330,6 +330,11 @@ const MiningCarousel = () => {
             >
               {currentSlideData.title}
             </h2>
+            <FadeInText delay={0.3}>
+              <p style={{ minHeight: "100px" }}>
+                {currentSlideData.description}
+              </p>
+            </FadeInText>
           </FadeInText>
 
           <FadeInText delay={0.15}>
@@ -373,10 +378,6 @@ const MiningCarousel = () => {
                 </div>
               )}
             </div>
-          </FadeInText>
-
-          <FadeInText delay={0.3}>
-            <p style={{ minHeight: "100px" }}>{currentSlideData.description}</p>
           </FadeInText>
 
           <div className="cta-button" style={{ marginTop: "20px" }}>
