@@ -291,6 +291,19 @@
 }
 
 #corporate-advisory-hero-container {
+  .content {
+    max-width: 100%;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    justify-content: center !important;
+    align-items: center !important;
+
+    .content-inner {
+      position: relative;
+    }
+  }
+
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
     .hero-foreground-image {
       top: 0px !important;
@@ -366,14 +379,27 @@
 }
 
 #technical-hero {
-  @media screen and (min-width: 1400px) and (max-width: 1700px) {
+  .content {
+    max-width: 100%;
+    width: 100vw;
+    left: -10%;
+    top: 0;
+    justify-content: center !important;
+    align-items: center !important;
+
+    .content-inner {
+      position: relative;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
     .title {
       font-size: var(--text-xlarge) !important;
       max-width: 70% !important;
     }
 
     .description {
-      left: 180px !important ;
+      left: 180px !important;
       top: -30px !important;
     }
 
@@ -390,7 +416,7 @@
   @media screen and (min-width: 992px) and (max-width: 1400px) {
     .content {
       position: relative !important;
-      top: 250px !important;
+      // top: 250px !important;
     }
 
     .subtitle {
@@ -400,8 +426,8 @@
 
   .content {
     display: flex;
-    top: 100px;
-    right: 13% !important;
+    // top: 100px;
+    right: 20% !important;
   }
 
   // .hero-foreground-image {
@@ -415,7 +441,7 @@
 
   .subtitle {
     position: absolute;
-    top: 160px;
+    top: 60px;
     max-width: 100% !important;
     width: 35%;
     right: -25%;
@@ -446,6 +472,18 @@
 }
 
 #project-hero {
+  .content {
+    max-width: 100%;
+    width: 100vw;
+    left: -12%;
+    top: 0px !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    .content-inner {
+      position: relative;
+    }
+  }
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
     .title {
       font-size: var(--text-xlarge) !important;
@@ -477,7 +515,7 @@
     }
   }
   .content {
-    margin-top: 13%;
+    // margin-top: 13%;
     margin-left: 600px;
     z-index: 999 !important;
   }
@@ -522,6 +560,18 @@
 }
 
 #social-hero {
+  .content {
+    max-width: 100%;
+    width: 100vw;
+    left: -12%;
+    top: -40px !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    .content-inner {
+      position: relative;
+    }
+  }
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
     .title {
       font-size: var(--text-xlarge) !important;
@@ -564,6 +614,16 @@
     .title {
       max-width: 70% !important;
       margin-left: -140px !important;
+      margin-top: 80px;
+    }
+
+    .description {
+      white-space: wrap !important;
+      max-width: 52%;
+    }
+
+    .content-inner {
+      margin-bottom: -100px;
     }
   }
 
