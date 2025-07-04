@@ -14,9 +14,9 @@
       width: 50% !important;
     }
 
-    .prev {
-      left: 13% !important;
-    }
+    // .prev {
+    //   left: 13% !important;
+    // }
   }
 
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
@@ -81,8 +81,12 @@
 .mining-design-carousel {
   background-color: black;
   // min-height: 120vh;
-  margin-top: -200px;
+  // margin-top: -200px;
   position: relative;
+
+  @media screen and (max-width: 1400px) {
+    margin-top: 0;
+  }
 
   .boulder-outside {
     display: none;
@@ -107,11 +111,14 @@
   align-items: center;
   padding-top: 30vh;
   padding-bottom: 22vh;
-  @media screen and (min-width: 769px) and (max-width: 1400px) {
+
+  @media screen and (min-width: 1024px) {
     .text-content {
       padding-left: 50px;
     }
+  }
 
+  @media screen and (min-width: 769px) and (max-width: 1400px) {
     .icon-container {
       scale: 0.8;
     }
@@ -182,6 +189,10 @@
       h1 {
         letter-spacing: normal;
       }
+
+      @media screen and (max-width: 1400px) {
+        gap: 2rem;
+      }
     }
 
     h1 {
@@ -204,8 +215,8 @@
   padding-block: 200px;
 
   @media screen and (max-width: 1024px) {
-    padding-bottom: -60px !important;
     padding-top: 0px !important;
+    padding-block: 0px;
   }
 }
 
@@ -268,7 +279,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -200px;
+  // margin-top: -200px;
   overflow: hidden;
 
   @media screen and (max-width: 1024px) {
@@ -292,7 +303,7 @@
   h1 {
     font-size: var(--text-xxlarge);
     font-family: var(--teriary-font);
-    padding-top: 30rem;
+    padding-top: 80px;
     padding-bottom: 4rem;
     font-weight: normal;
     text-transform: uppercase;
@@ -304,7 +315,7 @@
     }
 
     @media screen and (min-width: 1400px) and (max-width: 1700px) {
-      margin-top: -200px !important;
+      // margin-top: -200px !important;
     }
 
     padding-bottom: 10% !important;
@@ -848,6 +859,22 @@
     width: 100%;
     max-width: 1200px;
     margin-left: 30%;
+  }
+  @media screen and (max-width: 400px) {
+    max-width: 600px;
+
+    .tabs-container {
+      max-width: 600px;
+      scale: 0.65;
+    }
+    .tabs-header {
+      gap: 15px !important;
+    }
+
+    .section-label {
+      padding-bottom: 0 !important;
+      margin-bottom: -100px;
+    }
   }
 }
 

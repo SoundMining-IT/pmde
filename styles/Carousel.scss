@@ -65,7 +65,8 @@
   .prev,
   .next {
     position: absolute;
-    top: 50%;
+    scale: 0.8 !important;
+    top: 280px;
     transform: translateY(-50%);
     background: none !important;
     border: none;
@@ -78,8 +79,12 @@
   }
 
   .prev {
-    left: 20%;
+    left: calc(50vw - 600px);
     scale: 1;
+
+    @media screen and (max-width: 1200px) {
+      left: 120px;
+    }
   }
 
   .next {
@@ -192,7 +197,7 @@
     position: absolute;
     top: -70px;
     width: 45%;
-    scale: 1.5;
+    scale: 1.25;
     height: 100%;
     // background-image: url("../public/images/Hero.webp");
     background-repeat: no-repeat;
@@ -227,11 +232,33 @@
 
   .prev {
     left: 20%;
-    scale: 1;
+    bottom: 0px !important;
+    scale: 0.5 !important;
   }
 
   .next {
-    right: 35%;
-    scale: 1;
+    bottom: 0px !important;
+    right: 20%;
+    scale: 0.5 !important;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .prev {
+      // left: calc(50vw - 400px);
+      // left: 80px !important;
+      bottom: 0px !important;
+      scale: 0.5 !important;
+    }
+
+    .next {
+      bottom: 0px !important;
+      right: 25%;
+      scale: 0.5 !important;
+    }
+  }
+  @media screen and (max-width: 1024px) and (max-height: 768px) {
+    .next {
+      right: 30px;
+    }
   }
 }

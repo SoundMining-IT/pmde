@@ -178,9 +178,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .lottie-container {
+    padding: 0 !important;
+  }
+
   .back-to-top {
     width: 60px;
     height: 80px;
+    scale: 0.8;
+    margin-right: -6px;
 
     img {
       width: 20px;
@@ -189,12 +195,15 @@
   }
 
   .mining-design-carousel .mining-carousel .prev {
-    left: 60px;
+    left: 0px;
     top: 357px;
   }
 
   .mining-design-carousel .mining-carousel .next {
     top: 357px;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .advisory-tabs .section-label h1 {

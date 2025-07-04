@@ -23,7 +23,7 @@
 
   .wide-screen-carousel .carousel .prev,
   .wide-screen-carousel .carousel .next {
-    top: -34% !important;
+    top: 100px !important;
   }
 
   .testimonial-carousel-redesign .prev {
@@ -189,9 +189,9 @@
     align-items: center !important;
     justify-content: center !important;
 
-    .carousel {
-      margin-bottom: -20%;
-    }
+    // .carousel {
+    //   margin-bottom: -20%;
+    // }
     .prev,
     .next {
       width: 80px !important;
@@ -234,7 +234,7 @@
     .next {
       right: 108px !important;
       scale: 1 !important;
-      top: 55% !important;
+      top: 30vh !important;
       img {
         width: 80px !important;
         height: 80px !important;
@@ -243,7 +243,7 @@
 
     .prev {
       scale: 1 !important;
-      top: 55% !important;
+      top: 30vh !important;
       left: 15% !important;
       img {
         width: 80px !important;
@@ -388,11 +388,11 @@
 
   .wide-screen-carousel .carousel .prev,
   .wide-screen-carousel .carousel .next {
-    top: 20% !important;
+    top: 100px !important;
   }
 
   .testimonials {
-    min-height: 150vh !important;
+    // min-height: 100vh !important;
   }
 
   .testimonials .stats-graph {
@@ -472,11 +472,11 @@
   }
 
   .wide-screen-carousel .carousel {
-    margin-top: -190px !important;
+    // margin-top: -190px !important;
   }
 
   #wide-screen-carousel-about .carousel {
-    margin-top: -190px !important;
+    // margin-top: -190px !important;
   }
 
   .wide-screen-carousel {
@@ -484,15 +484,16 @@
   }
 
   .wide-screen-carousel .prev {
-    left: 10% !important;
+    left: 20px !important;
   }
 
   #wide-screen-carousel-about .prev {
-    left: 27% !important;
+    left: 30% !important;
+    // bottom: 0px !important;
   }
 
   .wide-screen-carousel .carousel .next {
-    right: 10% !important;
+    right: 20px !important;
   }
 
   .services-carousel .icon-container {
@@ -508,11 +509,13 @@
   }
 
   .team-carousel-container .nav-button.right {
-    right: 5% !important;
+    right: 15px !important;
+    scale: 0.8;
   }
 
   .team-carousel-container .nav-button.left {
-    left: 5% !important;
+    left: 15px !important;
+    scale: 0.8;
   }
 
   .corp-tabs {
@@ -522,5 +525,17 @@
   .two-sided-tabs .tabs-content,
   .two-sided-tabs .tabs-container {
     scale: 0.9;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team-carousel-container .nav-button.right {
+    right: -15px !important;
+    scale: 0.5;
+  }
+
+  .team-carousel-container .nav-button.left {
+    left: -15px !important;
+    scale: 0.5;
   }
 }

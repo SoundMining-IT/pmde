@@ -165,20 +165,20 @@
       .prev,
       .next {
         scale: 1;
-        top: -10% !important;
+        top: 210px !important;
 
         img {
-          width: 32px;
-          height: 32px;
+          width: 60px;
+          height: 60px;
         }
       }
 
       .prev {
-        left: 30px;
+        left: 10px;
       }
 
       .next {
-        right: 30px;
+        right: 10px;
       }
     }
 
@@ -192,7 +192,7 @@
       }
 
       h2 {
-        font-size: var(--text-large);
+        font-size: var(--text-medium);
       }
     }
 
@@ -239,7 +239,7 @@
     }
 
     .free-form-text h1 {
-      margin-top: 100px;
+      margin-top: 50px;
       font-size: var(--text-large) !important;
     }
 
@@ -294,7 +294,12 @@
     }
 
     .advisory-carousel .slide-icon {
-      padding-bottom: 50px;
+      // padding-bottom: 50px;
+      scale: 0.65;
+
+      @media screen and (orientation: portrait) {
+        // margin-right: -50px;
+      }
     }
 
     .advisory-carousel {
@@ -333,19 +338,19 @@
       position: absolute;
       z-index: 999;
       right: 20px !important;
-      top: -70px !important;
+      top: 250px !important;
     }
 
     .prev {
       position: absolute;
       z-index: 999;
       left: 20px !important;
-      top: -70px !important;
+      top: 250px !important;
     }
   }
 
   .testimonials {
-    min-height: 150vh !important;
+    // min-height: 150vh !important;
     .boulder-bottom,
     .boulder-top,
     .boulder-right {

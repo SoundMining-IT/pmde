@@ -134,7 +134,14 @@ const TestimonialCarousel = () => {
           }}
         >
           {/* SVG for left arrow */}
-          <img src="/images/ArrowLeftWhite.svg" alt="Next" />
+          <img
+            src="/images/Arrow Left.svg"
+            alt="Next"
+            style={{
+              backgroundColor: "rgba(255,255,255,0.25)",
+              borderRadius: "50%",
+            }}
+          />
         </motion.button>
 
         {/* White Content Box */}
@@ -187,7 +194,14 @@ const TestimonialCarousel = () => {
           }}
         >
           {/* SVG for right arrow */}
-          <img src="/images/ArrowRightWhite.svg" alt="Next" />
+          <img
+            src="/images/Arrow Right.svg"
+            alt="Next"
+            style={{
+              backgroundColor: "rgba(255,255,255,0.25)",
+              borderRadius: "50%",
+            }}
+          />
         </motion.button>
       </div>
 

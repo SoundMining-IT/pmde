@@ -5,16 +5,6 @@
   justify-content: center;
   position: relative;
 
-  @media screen and (min-width: 989px) and (max-width: 1400px) {
-    .nav-button.right {
-      right: 12% !important;
-    }
-
-    .nav-button.left {
-      left: 12% !important;
-    }
-  }
-
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
     .cta-button {
       padding-top: 30px !important;
@@ -84,11 +74,13 @@
   .left {
     left: 20% !important;
     top: 30% !important;
+    scale: 0.5;
   }
 
   .right {
     right: 20% !important;
     top: 30% !important;
+    scale: 0.5;
   }
 
   @media screen and (min-width: 1400px) and (max-width: 1700px) {
@@ -98,6 +90,20 @@
 
     .right {
       right: 15% !important;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .left {
+      left: -10px !important;
+      top: 30% !important;
+      scale: 0.5;
+    }
+
+    .right {
+      right: -10px !important;
+      top: 30% !important;
+      scale: 0.5;
     }
   }
 
