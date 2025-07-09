@@ -68,7 +68,7 @@ const SocialAnndEnvironmentalSolutions = () => {
         </div>
       </section>
 
-      <AnimatedStatsSection />
+      {/* <AnimatedStatsSection /> */}
     </Layout>
   );
 };

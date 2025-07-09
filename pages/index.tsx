@@ -195,7 +195,7 @@ const Index = () => {
         <AnimatedH1>Services and Offerings</AnimatedH1>
         <ServicesCarousel />
       </AnimatedSection>
-      <AnimatedStatsSection />
+      {/* <AnimatedStatsSection /> */}
     </Layout>
   );
 };

@@ -69,7 +69,7 @@ const CorporateAdvisory = () => {
         </div>
       </section>
 
-      <AnimatedStatsSection />
+      {/* <AnimatedStatsSection /> */}
     </Layout>
   );
 };

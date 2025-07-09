@@ -124,7 +124,7 @@ const About = () => {
         <ChooseUsCarousel />
       </section>
 
-      <AnimatedStatsSection />
+      {/* <AnimatedStatsSection /> */}
     </Layout>
   );
 };

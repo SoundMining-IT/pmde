@@ -102,7 +102,7 @@ const TechnicalExpertise = () => {
         </div>
       </section>
 
-      <AnimatedStatsSection />
+      {/* <AnimatedStatsSection /> */}
     </Layout>
   );
 };

@@ -87,7 +87,7 @@ const PeopleExcellence = () => {
         </div>
       </section>
 
-      <AnimatedStatsSection />
+      {/* <AnimatedStatsSection /> */}
     </Layout>
   );
 };

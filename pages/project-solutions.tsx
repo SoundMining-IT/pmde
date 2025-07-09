@@ -87,7 +87,7 @@ const ProjectSolutions = () => {
         </div>
       </section>
 
-      <AnimatedStatsSection />
+      {/* <AnimatedStatsSection /> */}
     </Layout>
   );
 };
