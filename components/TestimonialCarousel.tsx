@@ -31,13 +31,7 @@ const testimonials = [
     company: "JSE",
     corp: "",
   },
-  {
-    text: '"Their 2024 Competent Person’s Report for Kalagadi confirmed reserves and recommended improvements that boosted production by over 50%. Their diverse skills continue to add value across multiple projects."',
-    name: "Rian Strydom",
-    job: "Financial Director",
-    company: "Kalagadi Manganese",
-    corp: "",
-  },
+
   {
     text: '"I\'ve worked with PMDE several times and always found them professional and reliable. They define clear strategies and deliver detailed, high-quality outputs while aligning with client expectations."',
     name: "Richard Thomas",

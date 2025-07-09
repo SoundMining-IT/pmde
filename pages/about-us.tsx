@@ -106,10 +106,6 @@ const About = () => {
       </section>
 
       <section className="team-section flex col ac jc">
-        <AnimatedHeading style={{ color: "black" }}>
-          Meet OUR Team
-        </AnimatedHeading>
-        <TeamCarousel />
         <div className="timeline-section flex col ac jc">
           <AnimatedHeading>Our Journey in Mining Excellence</AnimatedHeading>
           <Timeline />

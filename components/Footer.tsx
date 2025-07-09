@@ -13,18 +13,11 @@ const Footer = () => {
         </div>
         <div className="social-icons">
           <Link
-            href="https://www.linkedin.com/company/soundmining/"
+            href="https://www.linkedin.com/company/pmde/"
             target="_blank"
             className="social-link"
           >
             <img src="/images/linkedin.svg" alt="linkedin" />
-          </Link>
-          <Link
-            href="https://www.youtube.com/@SoundMining"
-            target="_blank"
-            className="social-link"
-          >
-            <img src="/images/Youtube.svg" alt="linkedin" />
           </Link>
         </div>
       </div>
