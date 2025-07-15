@@ -36,7 +36,7 @@ const slides = [
   {
     title: "END-TO-END ADVISORY ACROSS THE MINING LIFECYCLE",
     description:
-      "At Sound Mining, our design specialists collaborate across disciplines to create integrated designs backed by extensive experience and proprietary knowledge, delivering unrivalled results.",
+      "At PMDE, our design specialists collaborate across disciplines to create integrated designs backed by extensive experience and proprietary knowledge, delivering unrivalled results.",
     backgroundImage: "/images/LottieBackground.webp",
     animationPath: "/lotties/3.json",
     buttonText: "LEARN MORE",

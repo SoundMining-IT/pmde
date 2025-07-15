@@ -48,7 +48,7 @@ const SocialAnndEnvironmentalSolutions = () => {
           backgroundImage="/images/SocialBKG.jpg"
         />
         <div id="bottom-icon">
-          <img src="/updatedImages/PMDEIcon.svg" alt="Arch" />
+          <img src="/images/PMDEIcon.svg" alt="Arch" />
         </div>
       </div>
       <section className="wide-screen-carousel">

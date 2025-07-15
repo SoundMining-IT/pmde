@@ -18,7 +18,7 @@ const teamMembersData: TeamMember[] = [
     image: "/images/Group_1487.webp",
     linkedinUrl: "https://www.linkedin.com/in/vaughn-duke-76596ba/",
     backText:
-      "Vaughn brings over 20 years of experience in strategic leadership and business development in the mining sector. He co-founded Sound Mining with a vision to drive innovation and excellence.",
+      "Vaughn brings over 20 years of experience in strategic leadership and business development in the mining sector. He co-founded PMDE with a vision to drive innovation and excellence.",
   },
   {
     name: "PIETER POTGIETER",
