@@ -205,7 +205,7 @@ export const VanadiumCaseStudyData: CaseStudyData = {
   heroIntroText:
     "An ASX-listed vanadium mining company aimed to develop a new project in South Africa but faced technical challenges, financial constraints, and community resistance.",
   heroDescription:
-    "To advance the project, PMDE provided geological modelling, feasibility studies, financial advisory, and stakeholder engagement. Their support increased the project's value to $1.05 billion and secured long-term operational stability. By maintaining a long-term partnership, Sound Mining ensured the company had the necessary expertise at every stage.",
+    "To advance the project, PMDE provided geological modelling, feasibility studies, financial advisory, and stakeholder engagement. Their support increased the project's value to $1.05 billion. By maintaining a long-term partnership, Sound Mining ensured the company had the necessary expertise at every stage.",
   clientImage: "/images/TopVanadium.webp",
   clientTitle: "About the client",
   clientDescription:
