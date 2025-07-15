@@ -682,9 +682,9 @@
       top: 10px !important;
     }
   }
-  @media screen and (min-width: 1400px) and (max-width: 1700px) {
+  @media screen and (min-width: 1400px) {
     .content {
-      margin-left: 140px !important;
+      margin-left: calc(50vw - 700px) !important;
       margin-top: 19% !important;
     }
   }
